@@ -1,0 +1,39 @@
+﻿@model Car
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-action="create" asp-controller="Car" method="post">
+    <div class="mb-3 row">
+        <label class="col-sm-2"></label>
+        <div class="col-sm-10 text-danger">@Html.ValidationMessageFor(x => x.Name)</div>
+
+        <label for="inputName" class="col-sm-2 col-form-label">Car</label>
+        <div class="col-sm-10">
+            <input type="text" asp-for="Name" class="form-control" id="inputName">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label class="col-sm-2"></label>
+        <div class="col-sm-10 text-danger">@Html.ValidationMessageFor(x => x.Year)</div>
+
+        <label for="inputYear" class="col-sm-2 col-form-label">Year</label>
+        <div class="col-sm-10">
+            <input type="number" asp-for="Year" class="form-control" id="inputYear">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <select class="form-control" asp-for="BrandId">
+            @foreach(var b in ViewBag.Brands)
+            {
+                <option value="@b.Id">@b.Name</option>
+            }
+        </select>
+    </div>
+    <div>
+        <button class="btn btn-success" type="submit" value="Create">Create</button>
+        <a class="btn btn-danger" asp-action="Index" asp-controller="Car" role="button">Cancel</a>
+    </div>
+</form>
