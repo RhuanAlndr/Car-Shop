@@ -47,7 +47,7 @@ Here you can list the main routes of your API, and what are their expected reque
 |----------------------|-----------------------------------------------------
 | <kbd>GET /brand</kbd>     | retrieves all brands [response details](#get-brands-details)
 | <kbd>POST /brand</kbd>     | create a new brand [response details](#post-brand-detail)
-| <kbd>POST /brand/{id}</kbd>     | edit a brand [response details](#post-brand-detail)
+| <kbd>POST /brand/{id}</kbd>     | edit a brand [response details](#post-brand-details)
 | <kbd>DELETE /brand/{id}</kbd>     | delete a brand [response details](#delete-brand-detail)
 | <kbd>GET /cars</kbd>     | retrieves all cars [response details](#get-cars-details)
 | <kbd>POST /car</kbd>     | create a new car [response details](#post-car-detail)
@@ -73,6 +73,32 @@ Here you can list the main routes of your API, and what are their expected reque
 ```
 
 **RESPONSE**
+```json
+{
+  "id": "id",
+  "name": "name-your-brand"
+}
+```
+<h3 id="post-brand-details">POST /brand/{id}</h3>
+
+**REQUEST**
+```json
+{
+  "id": "id",
+  "name": "name-your-brand"
+}
+```
+
+**RESPONSE**
+```json
+{
+  "name": "name of the brand"
+}
+```
+
+<h3 id="delete-brand-detail">DELETE /brand/{id}</h3>
+
+**REQUEST**
 ```json
 {
   "id": "id",
