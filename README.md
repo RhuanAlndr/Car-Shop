@@ -59,7 +59,7 @@ Here you can list the main routes of your API, and what are their expected reque
 **RESPONSE**
 ```json
 {
-  "name": "name of the brand"
+  "name": "string"
 }
 ```
 
@@ -68,15 +68,15 @@ Here you can list the main routes of your API, and what are their expected reque
 **REQUEST**
 ```json
 {
-  "name": "name-your-brand"
+  "name": "string"
 }
 ```
 
 **RESPONSE**
 ```json
 {
-  "id": "id",
-  "name": "name-your-brand"
+  "id": "int",
+  "name": "string"
 }
 ```
 <h3 id="post-brand-details">POST /brand/{id}</h3>
@@ -84,15 +84,15 @@ Here you can list the main routes of your API, and what are their expected reque
 **REQUEST**
 ```json
 {
-  "id": "id",
-  "name": "name-your-brand"
+  "id": "int",
+  "name": "string"
 }
 ```
 
 **RESPONSE**
 ```json
 {
-  "name": "name of the brand"
+  "name": "string"
 }
 ```
 
@@ -101,8 +101,65 @@ Here you can list the main routes of your API, and what are their expected reque
 **REQUEST**
 ```json
 {
-  "id": "id",
-  "name": "name-your-brand"
+  "id": "int",
+  "name": "string"
+}
+```
+<h3 id="get-cars-details">GET /car</h3>
+
+**RESPONSE**
+```json
+{
+  "name": "string",
+  "brand_name": "string"
+}
+```
+
+<h3 id="post-car-detail">POST /car</h3>
+
+**REQUEST**
+```json
+{
+  "name": "string",
+  "brand_name": "string"
+}
+```
+
+**RESPONSE**
+```json
+{
+  "id": "int",
+  "name": "string",
+  "brand_name": "string"
+}
+```
+<h3 id="post-car-details">POST /car/{id}</h3>
+
+**REQUEST**
+```json
+{
+  "id": "int",
+  "name": "string",
+  "brand_name": "string"
+}
+```
+
+**RESPONSE**
+```json
+{
+  "name": "string",
+  "bran_name": "string"
+}
+```
+
+<h3 id="delete-car-detail">DELETE /car/{id}</h3>
+
+**REQUEST**
+```json
+{
+  "id": "int",
+  "name": "string",
+  "bran_name": "string"
 }
 ```
 
