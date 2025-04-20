@@ -45,34 +45,38 @@ Here you can list the main routes of your API, and what are their expected reque
 ​
 | route               | description                                          
 |----------------------|-----------------------------------------------------
-| <kbd>GET /authenticate</kbd>     | retrieves user info see [response details](#get-auth-detail)
-| <kbd>POST /authenticate</kbd>     | authenticate user into the api see [request details](#post-auth-detail)
+| <kbd>GET /brand</kbd>     | retrieves all brands [response details](#get-brands-details)
+| <kbd>POST /brand</kbd>     | create a new brand [response details](#post-brand-detail)
+| <kbd>POST /brand/{id}</kbd>     | edit a brand [response details](#post-brand-detail)
+| <kbd>DELETE /brand/{id}</kbd>     | delete a brand [response details](#delete-brand-detail)
+| <kbd>GET /cars</kbd>     | retrieves all cars [response details](#get-cars-details)
+| <kbd>POST /car</kbd>     | create a new car [response details](#post-car-detail)
+| <kbd>POST /car/{id}</kbd>     | edit a car [response details](#post-car-detail)
+| <kbd>DELETE /car/{id}</kbd>     | delete a car [response details](#delete-car-detail)
 
-<h3 id="get-auth-detail">GET /authenticate</h3>
+<h3 id="get-brands-details">GET /brand</h3>
 
 **RESPONSE**
 ```json
 {
-  "name": "Fernanda Kipper",
-  "age": 20,
-  "email": "her-email@gmail.com"
+  "name": "name of the brand"
 }
 ```
 
-<h3 id="post-auth-detail">POST /authenticate</h3>
+<h3 id="post-brand-detail">POST /brand</h3>
 
 **REQUEST**
 ```json
 {
-  "username": "fernandakipper",
-  "password": "4444444"
+  "name": "name-your-brand"
 }
 ```
 
 **RESPONSE**
 ```json
 {
-  "token": "OwoMRHsaQwyAgVoc3OXmL1JhMVUYXGGBbCTK0GBgiYitwQwjf0gVoBmkbuyy0pSi"
+  "id": "id",
+  "name": "name-your-brand"
 }
 ```
 
