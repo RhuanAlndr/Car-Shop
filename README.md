@@ -4,15 +4,14 @@
  <a href="#tech">Technologies</a> • 
  <a href="#started">Getting Started</a> • 
   <a href="#routes">API Endpoints</a> •
- <a href="#colab">Collaborators</a> •
  <a href="#contribute">Contribute</a>
 </p>
 
 <p align="center">
-    <b>The Car Shop is a API where you can manage cars. You can create, edit and delete data of the cars.</b>
+    <b>The Car Shop is an API where you can manage cars. You can create, edit and delete cars and their brands.</b>
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="tech">💻 Technologies</h2>
 
 - Asp .Net
 - C#
@@ -27,16 +26,7 @@ Here you describe how to run your project locally
 How to clone your project
 
 ```bash
-git clone https://github.com/RhuanAlndr/Car-Shop
-```
-
-<h3>Starting</h3>
-
-How to start your project
-
-```bash
-cd project-name
-npm some-command-to-run
+git clone https://github.com/RhuanAlndr/Car-Shop.git
 ```
 
 <h2 id="routes">📍 API Endpoints</h2>
@@ -174,7 +164,7 @@ Here you can list the main routes of your API, and what are their expected reque
 
 Please, feel free to contribute to my project by following the steps below:
 
-1. `git clone https://github.com/Fernanda-Kipper/text-editor.git`
+1. `git clone https://github.com/RhuanAlndr/Car-Shop.git`
 2. `git checkout -b feature/NAME`
 4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
 
